@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+             .first-nav{
+                display: flex;
+                justify-content: flex-start;
+                margin-bottom: 50px;
+            }
+            .second-nav{
+                margin-left: 100px;
+                margin-right: 100px; 
+                margin-bottom: 50px;
+                
+            }
+            .reg{
+                display: flex;
+                margin-left: 49%;
+                justify-content: flex-end;
+            }
+            .reg1{
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                     
+            }
+            .submit{
+                
+                padding-left: 10px;      
+            }
+            .searchForm{
+                margin-bottom: 20px;
+            }
+            </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-dark bg-primary first-nav">
+                <a class="navbar-brand" href="#">Project Explorer</a>
+                <form  class="form-inline" name="searchform">
+                <input class="form-control mr-2" type="text" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>         
+                </form> 
+                <div class="submit"> 
+                <a class="navbar-text" href="#">Submit</a>
+                </div>
+                <div class="reg">
+                <ul class="reg1 list-unstyled">
+                    <li class="nav-item"><a class="nav-link navbar-text"href="#">Sign up</a> </li>
+                    <li class="nav-item"><a class="nav-link navbar-text"href="#">Login</a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+       
+        <main>
+                <section class="container p-3">
+                    <p><h3>Project 1</h3></p>
+                   
+                    <div class="row bg-light p-3">
+                        <div class="col">
+                            <div> Created By</div>
+                        <div>Ade Chucks</div>
+                        </div>
+                        <div class="col">
+                             <div> Date Created </div>
+                             <div> 20-08-2030 </div>
+                        </div>
+                        <div class="col">
+                            <div> Last Updated </div>
+                            <div> 20-08-2030 </div>
+                        </div>
+                        <div class="col d-flex justify-content-end">
+                            <button class="btn btn-primary">View Project</button>
+                        </div>
+                    </div>
+            <br>   
+            <section>
+                <form class="">           
+                    <div class="row form-group">
+                        <div class="col col-6">
+                            <h5>Edit Project</h5>
+                            <hr>
+                        
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            perferendis ad. Voluptates quia sit fugit numquam ipsum at, beatae deleniti.
+                            quos ex animi tempore. Nam, eos. Nostrum veritatis, 
+                            voluptates vel autem commodi dicta. Saepe, perferendis natus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, quis error inventore
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum ipsam 
+                            dignissimos nisi ut beatae neque iure veritatis assumenda perspiciatis consectetur aut animi, 
+                            <label for="projectAbstract" style="margin-top: 20px;"><strong>Comments</strong></label>
+                                <textarea name="abstract" class="form-control w-100" rows=""
+                                placeholder="Project 1 is a very interesting project" style=" margin-bottom: 20px;"></textarea>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <hr>
+                                <div style="text-align: center;">No comments added yet</div>
+                            </div>
+                        <div class="col">
+                            <h5>Project Details</h5>
+                            <hr>
+                            <div>
+                                <input type="text" value= "Author(s)" class="form-control bg-light" style="font-weight: bold;">
+                                <input type="text" name="authors" class="form-control" placeholder="Ade Chris">
+                                <span class="form-control bg-light" style="margin-bottom:30px"><a href="" >#web</a></span>
+                                <div class="card w-100">
+                                    <div class="card-header">Project files</div>
+                                    <div class="card-body">No file uploaded yet</div>
+                                </div>
+                               
+                                </div>
+                        </div>
+                       
+                        </div>
+                   </form>
+
+               
+            </section>
+        </main>
+        <footer>
+        </div>
+        <nav class="navbar navbar-light bg-light justify-content-end second-nav">
+            <span class="navbar-text ">Project Explorer &copy 2020 - <strong>Edconnect</strong></span>
+        </nav>  
+        </footer>
+    </body>
+</html>

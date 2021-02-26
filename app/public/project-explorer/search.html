@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+             .first-nav{
+                display: flex;
+                justify-content: flex-start;
+                margin-bottom: 50px;
+            }
+            .second-nav{
+                margin-left: 100px;
+                margin-right: 100px; 
+                margin-bottom: 50px;
+                
+            }
+            .reg{
+                display: flex;
+                margin-left: 49%;
+                justify-content: flex-end;
+            }
+            .reg1{
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                     
+            }
+            .submit{
+                
+                padding-left: 10px;      
+            }
+            .searchForm{
+                margin-bottom: 20px;
+            }
+            </style>
+                     
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-dark bg-primary first-nav">
+                <a class="navbar-brand" href="#">Project Explorer</a>
+                <form  class="form-inline" name="searchform">
+                <input class="form-control mr-2" type="text" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>         
+                </form> 
+                <div class="submit"> 
+                <a class="navbar-text" href="#">Submit</a>
+                </div>
+                <div class="reg">
+                <ul class="reg1 list-unstyled">
+                    <li class="nav-item"><a class="nav-link navbar-text"href="#">Sign up</a> </li>
+                    <li class="nav-item"><a class="nav-link navbar-text"href="#">Login</a></li>
+                </ul>
+                </div>
+                
+               
+            </nav>
+        </header>
+       
+        <main>
+            <section>
+                <p><h2 class="mx-auto w-75">Project Gallery</h2></p>
+                <form name="searchform" class=" container form-row bg-light p-3 mx-auto w-75 justify-content-center ">
+                       <input type="text" class="form-control form-control-lg col-6 mr-2 "
+                        placeholder="Search project name, authors, abstract, tags">
+                        <input type="text" value="Search By" class="form-control form-control-lg col-2 p-3" readonly>
+                        <select name="" id="" class="form-control form-control-lg col-2 mr-2 ">
+                            <option value="Name">Name</option>
+                            <option value="Authors">Authors</option>
+                            <option value="Abstract">Abstract</option>
+                            <option value="Tags">Tags</option>
+                        </select>
+                        <button class="btn btn-lg btn-primary">Submit</button>               
+                </form>
+            </section>
+            <section>
+                <div class="mx-auto w-75" style="margin-top:20px;"><h5 style="display: inline;" class="mr-2">All Projects</h5>(0 results)</div>
+             
+                <form class="form-row mx-auto w-75 p-3">         
+                    <div class="card d-flex p-3 mr-2">
+                        <a href="#" class="card-link"><h5 class="card-title">Project Title</h5></a>
+                        <h6 class="card-subtitle">Author 1, Author 2</h6><br>
+                        <span class="card-text">Some quick example text <br>
+                            to build on the card's title <br>
+                            and  make up the bulk of <br>
+                            the card's content. <br><br>
+                           
+                       </span>
+                       <ul class="list-unstyled list-inline">
+                           <li class="list-inline-item"><a href="#" class="card-link">#css</a></li>
+                            <li class="list-inline-item"><a href="#" class="card-link">#html</a></li>
+                            <li class="list-inline-item"><a href="#" class="card-link">#javascript</a></li>
+                       </ul>
+                    </div>
+                    <div class="card d-flex p-3">
+                        <a href="#" class="card-link"><h5 class="card-title">Project Title</h5></a>
+                        <h6 class="card-subtitle">Author 1, Author 2</h6><br>
+                        <span class="card-text">Some quick example text <br>
+                            to build on the card's title <br>
+                            and  make up the bulk of <br>
+                            the card's content. <br><br>
+                           
+                       </span>
+                       <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item"><a href="#" class="card-link">#css</a></li>
+                         <li class="list-inline-item"><a href="#" class="card-link">#html</a></li>
+                         <li class="list-inline-item"><a href="#" class="card-link">#javascript</a></li>
+                    </ul>
+                    </div>
+                    </form>
+                
+
+            </section>
+
+        </main>
+        <footer>
+        </div>
+        <nav class="navbar navbar-light bg-light justify-content-end second-nav">
+            <span class="navbar-text ">Project Explorer &copy 2020 - <strong>Edconnect</strong></span>
+        </nav>  
+        </footer>
+    </body>
+</html>

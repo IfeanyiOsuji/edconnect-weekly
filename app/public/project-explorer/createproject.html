@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+             .first-nav{
+                display: flex;
+                justify-content: flex-start;
+                margin-bottom: 50px;
+            }
+            .second-nav{
+                margin-left: 100px;
+                margin-right: 100px; 
+                margin-bottom: 50px;
+                
+            }
+            .reg{
+                display: flex;
+                margin-left: 49%;
+                justify-content: flex-end;
+            }
+            .reg1{
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                     
+            }
+            .submit{
+                
+                padding-left: 10px;      
+            }
+            .searchForm{
+                margin-bottom: 20px;
+            }
+            </style>
+                     
+
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-dark bg-primary first-nav">
+                <a class="navbar-brand" href="#">Project Explorer</a>
+                <form  class="form-inline" name="searchform">
+                <input class="form-control mr-2" type="text" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>         
+                </form> 
+                <div class="submit"> 
+                <a class="navbar-text" href="#">Submit</a>
+                </div>
+                <div class="reg">
+                <ul class="reg1 list-unstyled">
+                    <li class="nav-item"><a class="nav-link navbar-text"href="#">Sign up</a> </li>
+                    <li class="nav-item"><a class="nav-link navbar-text"href="#">Login</a></li>
+                </ul>
+                </div>
+                
+               
+            </nav>
+        </header>
+        <main>
+            
+            <form name="submitProject" class="mx-auto w-75">
+                <div  class="form-group form-label mx-auto w-75">
+                    <p><h3>Submit Project</h3></p>
+                <label for="name" class="form-label"><strong>Project Name</strong></label>
+                <input type="text" name="name" class="form-control" placeholder="Enter project name">
+                </div>
+                <div class="form-group form-label mx-auto w-75">
+                <label for="projectAbstract"><strong>Project Abstract</strong></label>
+                <textarea name="abstract" class="form-control" rows="10"></textarea>
+                </div>
+                <div class="form-group form-label mx-auto w-75">
+                <label for="authors"><strong>Authors</strong></label>
+                <input type="text" name="authors" class="form-control" placeholder="Enter author names(separated by commas)">
+                </div>
+                <div class="form-group form-label mx-auto w-75">
+                <label for="tags"><strong>Tag(s)</strong></label>
+                <input type="text" name="tags" class="form-control"
+                placeholder="Use # to tag project with different topics (e.g. #javascript, #mongodb)"><br>
+                <button type="submit" class="btn btn-primary">Continue</button>
+                </div>
+               
+            </form>
+        </main>
+        <footer>
+        </div>
+        <nav class="navbar navbar-light bg-light justify-content-end second-nav">
+            <span class="navbar-text ">Project Explorer &copy 2020 - <strong>Edconnect</strong></span>
+        </nav>  
+        </footer>
+    </body>
+</html>

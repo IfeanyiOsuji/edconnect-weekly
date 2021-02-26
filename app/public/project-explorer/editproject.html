@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+             .first-nav{
+                display: flex;
+                justify-content: flex-start;
+                margin-bottom: 50px;
+            }
+            .second-nav{
+                margin-left: 100px;
+                margin-right: 100px; 
+                margin-bottom: 50px;
+                
+            }
+            .reg{
+                display: flex;
+                margin-left: 49%;
+                justify-content: flex-end;
+            }
+            .reg1{
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                     
+            }
+            .submit{
+                
+                padding-left: 10px;      
+            }
+            .searchForm{
+                margin-bottom: 20px;
+            }
+            </style>
+   </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-dark bg-primary first-nav">
+                <a class="navbar-brand" href="#">Project Explorer</a>
+                <form  class="form-inline" name="searchform">
+                <input class="form-control mr-2" type="text" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>         
+                </form> 
+                <div class="submit"> 
+                <a class="navbar-text" href="#">Submit</a>
+                </div>
+                <div class="reg">
+                <ul class="reg1 list-unstyled">
+                    <li class="nav-item"><a class="nav-link navbar-text"href="#">Sign up</a> </li>
+                    <li class="nav-item"><a class="nav-link navbar-text"href="#">Login</a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="container p-3">
+            <p><h3>Project 1</h3></p>
+           
+            <div class="row bg-light p-3">
+                <div class="col">
+                    <div> Created By</div>
+                <div>Ade Chucks</div>
+                </div>
+                <div class="col">
+                     <div> Date Created </div>
+                     <div> 20-08-2030 </div>
+                </div>
+                <div class="col">
+                    <div> Last Updated </div>
+                    <div> 20-08-2030 </div>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-primary">View Project</button>
+                </div>
+            </div>   
+        </section>
+        
+        <section class="container"> 
+            <form class="">           
+                <div class="row form-group">
+                    <div class="col col-6">
+                        <p><h5>Edit Project</h5></p>
+                        <hr>
+                        <label class="form-label"><strong>Project name</strong></label>
+                        <input type="text" class="form-control" placeholder="Project 1">
+                        </div>
+                        
+                    <div class="col">
+                        <p><h5>Manage project files</h5></p>
+                        <hr>
+                        <div class="form-inline w-100">
+                        <input type="text" class="form-control w-75" placeholder="Click to open file browser">
+                        <input type="text" class="form-control col-2 justify-content-end" value="Browse" readonly>                          
+                        </div>
+                        <hr>  
+                    </div>
+                    </div>
+                    <div class="row form-group">
+                    <div class="col">
+                        <label for="projectAbstract"><strong>Project Abstract</strong></label>
+                        <textarea name="abstract" class="form-control w-100" rows="10"
+                        placeholder="Project 1 is a very interesting project"></textarea>
+
+                        <label for="authors"><strong>Authors</strong></label>
+                        <input type="text" name="authors" class="form-control" placeholder="Enter author names(separated by commas)">
+                        <label for="tags"><strong>Tag(s)</strong></label>
+                        <input type="text" name="tags" class="form-control"
+                        placeholder="Use # to tag project with different topics (e.g. #javascript, #mongodb)"><br>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                         </div> 
+                        <div class="col">       
+                        <div class="card w-100">
+                            <div class="card-header"><strong>Project files</strong></div>
+                            <div class="card-body">No file uploaded yet</div>
+                        </div>
+                        </div>
+                        
+                        <div class="row form-group">
+                        <div class="col">
+                       
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col">
+                        
+                        </div>
+                        </div>
+               </form>         
+                
+        </section>          
+        </main>
+        <footer>
+        </div>
+        <nav class="navbar navbar-light bg-light justify-content-end second-nav">
+            <span class="navbar-text ">Project Explorer &copy 2020 - <strong>Edconnect</strong></span>
+        </nav>  
+        </footer>
+    </body>
+</html>
