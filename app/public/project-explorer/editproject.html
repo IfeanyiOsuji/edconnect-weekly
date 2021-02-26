@@ -83,49 +83,34 @@
                         <p><h5>Edit Project</h5></p>
                         <hr>
                         <label class="form-label"><strong>Project name</strong></label>
-                        <input type="text" class="form-control" placeholder="Project 1">
-                        </div>
-                        
-                    <div class="col">
-                        <p><h5>Manage project files</h5></p>
-                        <hr>
-                        <div class="form-inline w-100">
-                        <input type="text" class="form-control w-75" placeholder="Click to open file browser">
-                        <input type="text" class="form-control col-2 justify-content-end" value="Browse" readonly>                          
-                        </div>
-                        <hr>  
-                    </div>
-                    </div>
-                    <div class="row form-group">
-                    <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Project 1">
                         <label for="projectAbstract"><strong>Project Abstract</strong></label>
                         <textarea name="abstract" class="form-control w-100" rows="10"
                         placeholder="Project 1 is a very interesting project"></textarea>
-
                         <label for="authors"><strong>Authors</strong></label>
                         <input type="text" name="authors" class="form-control" placeholder="Enter author names(separated by commas)">
                         <label for="tags"><strong>Tag(s)</strong></label>
                         <input type="text" name="tags" class="form-control"
                         placeholder="Use # to tag project with different topics (e.g. #javascript, #mongodb)"><br>
                         <button type="submit" class="btn btn-primary">Save</button>
-                         </div> 
-                        <div class="col">       
+                        </div>
+                        
+                    <div class="col">
+                        <div><p><h5>Manage project files</h5></p></div>
+                        <hr>
+                        <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="validatedCustomFile">
+                        <label class="custom-file-label" for="validatedCustomFile">
+                            Click to open custom file</label>
+                        </div>
+                        
+                        <hr> 
                         <div class="card w-100">
                             <div class="card-header"><strong>Project files</strong></div>
                             <div class="card-body">No file uploaded yet</div>
-                        </div>
-                        </div>
-                        
-                        <div class="row form-group">
-                        <div class="col">
-                       
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col">
-                        
-                        </div>
-                        </div>
+                        </div>                                         
+                    </div>
+                    </div>
                </form>         
                 
         </section>          
