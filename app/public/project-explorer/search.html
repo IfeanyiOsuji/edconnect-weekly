@@ -61,18 +61,22 @@
         <main>
             <section>
                 <p><h2 class="mx-auto w-75">Project Gallery</h2></p>
-                <form name="searchTerm" class="container form-row bg-light p-3 mx-auto w-75 justify-content-center ">
-                       <input type="text" class="form-control form-control-lg col-6 mr-2 "
+                <div class="container bg-light p-3 mr-2  mx-auto w-75">
+                <form name="searchForm" class="form-row justify-content-center">
+                       <input type="text" name="searchTerm" class="form-control form-control-lg col-6"
                         placeholder="Search project name, authors, abstract, tags">
-                        <input type="text" value="Search By" class="form-control form-control-lg col-2 p-3" readonly>
+                        <label for="searchBy" class="form-label p-3">Search by</label>
+
                         <select name="" id="" class="form-control form-control-lg col-2 mr-2 ">
                             <option value="Name">Name</option>
                             <option value="Authors">Authors</option>
                             <option value="Abstract">Abstract</option>
                             <option value="Tags">Tags</option>
                         </select>
-                        <button class="btn btn-lg btn-primary">Submit</button>               
+                        <button class="btn btn-lg btn-primary" style="margin-bottom:20px ;">Submit</button>               
                 </form>
+            </div>
+                
             </section>
             <section>
                 <div class="mx-auto w-75" style="margin-top:20px;"><h5 style="display: inline;" class="mr-2">All Projects</h5>(0 results)
