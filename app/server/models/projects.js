@@ -18,7 +18,7 @@ class Projects extends DataModel {
                 return false;
             }
         }
-        if(!Array.isArray(obj.authors) && !Array.isArray(obj.tags)){
+        if(!Array.isArray(obj.authors) || !Array.isArray(obj.tags)){
             return false
         }
             return true;
