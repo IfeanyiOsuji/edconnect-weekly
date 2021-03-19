@@ -8,7 +8,11 @@ class DataModel {
     }
 
     getById(id) {
-
+        for(let x =0; x<this.data.length; x++){
+            if(this.data[x].id === id)
+            return this.data[x];
+        }
+            return null;
     }
 
     save(obj) {
@@ -19,12 +23,30 @@ class DataModel {
         return false;
     }
 
+    // updates the data with the obj if the specified id is found
     update(obj, id) {
+        for(let i=0; i<this.data.length; i++){
+            if(this.data[i].id === id){
+                for( var prop in obj){
+                   this.data[i][prop] = obj[prop]; 
+                }
+                return true;
+            }
+           
+        } 
+        return false;       
 
     }
 
+    // deletes objects with the specified id;
     delete(id) {
-
+        for(let i=0; i<this.data.length; i++){
+            if(this.data[i].id === id){
+                this.data.splice(this.data.indexOf(this.data[i]), 1);
+                return true;
+            }     
+        } 
+        return false;   
     }
 
     // this method will be overriden in the sub classes
